@@ -37,13 +37,15 @@ oc compliance -h
 ### macOS / Apple Silicon
 
 The container image is currently published for `linux/amd64` only.  
-On Apple Silicon, build it :
+Build it and add it to 
 
 ```bash
+brew install go
 make build
-```
+cp ./bin/oc-compliance /opt/homebrew/bin
+chmod +x /opt/homebrew/bin/oc-compliance
 
-Alternatively, build the plugin from source using Go.
+```
 
 
 Subcommands
